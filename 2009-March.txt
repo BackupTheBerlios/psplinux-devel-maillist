@@ -1,0 +1,23 @@
+From miciu at gmx.de  Sun Mar 29 19:45:15 2009
+From: miciu at gmx.de (Michael Unterkalmsteiner)
+Date: Sun, 29 Mar 2009 19:45:15 +0200
+Subject: Starting the thing...
+Message-ID: <200903291945.16167.miciu@gmx.de>
+
+Hi,
+I'm following Linux on PSP since a year now (some breaks due to other 
+commitments, though). I see this as a chance to learn more both on the Linux 
+kernel and the MIPS arch... I have a CS background but the MIPS introduction 
+in the first semester is way to far away ;) so I jump back on it by reading 
+"See MIPS run". I did  some Kernel coding but *very* basic stuff.
+I don't know if anyone is currently working on the port... I tried to 
+understand Jacksons changes, changed a bit the boot sequence to have a root 
+filesystem on the memstick, and did some research on porting Linux to MIPS 
+(where I found out that some basics in my understanding are missing :)... 
+
+If someone is interested to exchange ideas on PSP Linux, you're welcome... I'm 
+having some fun with reading in the meantime
+
+Mik
+
+

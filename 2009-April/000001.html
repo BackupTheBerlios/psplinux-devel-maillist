@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> 64mb RAM for the slim
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/psplinux-devel/2009-April/index.html" >
+   <LINK REL="made" HREF="mailto:psplinux-devel%40lists.berlios.de?Subject=Re%3A%2064mb%20RAM%20for%20the%20slim&In-Reply-To=%3C200904051753.29673.miciu%40gmx.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>64mb RAM for the slim</H1>
+    <B>Michael Unterkalmsteiner</B> 
+    <A HREF="mailto:psplinux-devel%40lists.berlios.de?Subject=Re%3A%2064mb%20RAM%20for%20the%20slim&In-Reply-To=%3C200904051753.29673.miciu%40gmx.de%3E"
+       TITLE="64mb RAM for the slim">miciu at gmx.de
+       </A><BR>
+    <I>Sun Apr  5 17:53:29 CEST 2009</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi, 
+the kernel recognises the 64mb RAM of the slim but doesn't use it.
+HIGHMEM_START in include/asm-mips/mach-generic/spaces.h is set to 0x8a000000 
+which is fine for the fat, but too low for the slim. Should be 0x8c000000...
+The attached patch fixes that. 
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: slim_64mb.patch
+Type: text/x-patch
+Size: 481 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/psplinux-devel/attachments/20090405/029428d0/attachment.bin">https://lists.berlios.de/pipermail/psplinux-devel/attachments/20090405/029428d0/attachment.bin</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/psplinux-devel">More information about the psplinux-devel
+mailing list</a><br>
+</body></html>

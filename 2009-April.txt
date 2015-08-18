@@ -1,0 +1,19 @@
+From miciu at gmx.de  Sun Apr  5 17:53:29 2009
+From: miciu at gmx.de (Michael Unterkalmsteiner)
+Date: Sun, 5 Apr 2009 17:53:29 +0200
+Subject: 64mb RAM for the slim
+Message-ID: <200904051753.29673.miciu@gmx.de>
+
+Hi, 
+the kernel recognises the 64mb RAM of the slim but doesn't use it.
+HIGHMEM_START in include/asm-mips/mach-generic/spaces.h is set to 0x8a000000 
+which is fine for the fat, but too low for the slim. Should be 0x8c000000...
+The attached patch fixes that. 
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: slim_64mb.patch
+Type: text/x-patch
+Size: 481 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/psplinux-devel/attachments/20090405/029428d0/attachment.bin>
+
